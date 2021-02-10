@@ -40,9 +40,8 @@ func main() {
 
 	go decrementing(wg)
 
+	//I implemented a simple waitgroup to solve the issue with waiting for the goroutines to finish.
 	wg.Wait()
 
-	// We have no way to wait for the completion of a goroutine (without additional syncronization of some sort)
-	// We'll come back to using channels in Exercise 2. For now: Sleep.
 	Println("The magic number is:", i)
 }
