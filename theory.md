@@ -2,7 +2,7 @@ Exercise 1 - Theory questions
 -----------------------------
  
  ### What is the difference between concurrency and parallelism?
- > Concurrency is when two tasks run in an overlapping time manner, but not simultaneously. That is, one task run for a bit, and then the processor switches to another task and then switces back and keep swithcing. If something is run in paralell they do not interrupt each other and actually run at the same time. 
+ > Concurrency is when two tasks run in an overlapping time manner, but not simultaneously. That is, one task run for a bit, and then the processor switches to another task and then switces back and keep swithcing. If something is run in parallell they do not interrupt each other and actually run at the same time. 
  
  ### Why have machines become increasingly multicore in the past decade?
  > The reason for this is because the rate of hardware progress of a single core and clock speed hasn't been increasing that much, and one has discovered that its possible to run tasks in paralell on multiple processors to achieve faster performance. 
@@ -10,7 +10,7 @@ Exercise 1 - Theory questions
  
  ### Why do we divide software (programs) into concurrently executing parts (like threads or processes)?
  (Or phrased differently: What problems do concurrency help in solving?)
- > Concurrency can help solving a great deal of problems. Say you have a buch of calculations that doesnt depend on one anther. If you set four CPU cores on these calculations in stead of one you could solve it 4 times faster (in theory) as a paralell example. If you are making something that is interacting with several IO devices, you could potentially have to wait for the IO to respond, but with concurrency you cold do useful stuff in the meantime. And a lot of other demands. 
+ > Concurrency can help solving a great deal of problems. Say you have a buch of calculations that doesnt depend on one anther. If you set four CPU cores on these calculations in stead of one you could solve it 4 times faster (in theory) as a paralell example. If you are making something that is interacting with several IO devices, you could potentially have to wait for the IO to respond, but with concurrency you could do useful stuff in the meantime. And a lot of other demands. 
  
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
